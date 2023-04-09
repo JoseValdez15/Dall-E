@@ -26,7 +26,7 @@ const Home = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('react-chat-app-hazel.vercel.app', {
+      const response = await fetch('https://dall-e-rose-gamma.vercel.app/', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

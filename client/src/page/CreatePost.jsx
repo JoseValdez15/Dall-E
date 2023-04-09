@@ -28,7 +28,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('react-chat-app-hazel.vercel.app', {
+        const response = await fetch('https://dall-e-rose-gamma.vercel.app/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch('react-chat-app-hazel.vercel.app', {
+        const response = await fetch('https://dall-e-rose-gamma.vercel.app/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
