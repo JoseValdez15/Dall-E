@@ -5,13 +5,13 @@
       { "src": "*.py", "use": "@vercel/python" },
       { "src": "*.js", "use": "@vercel/node" }
     ],
-    "routes": [
+    "rewrites": [
         { "src": "/(.*)", "dest": "/" }
     ],
     
         "headers": [
           {
-            "source": "/api/(.*)",
+            "source": "/(.*)",
             "headers": [
               { "key": "Access-Control-Allow-Credentials", "value": "true" },
               { "key": "Access-Control-Allow-Origin", "value": "*" },
